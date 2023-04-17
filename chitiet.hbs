@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <h1>Chi tiet</h1>
+            <form action="/{{all._id}}" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <div class="text-center">
+                        <label style="width: 100px;" class=" text-center">
+                            <img src="/image/{{all.image}}" style="width: 100px;">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Ma san pham</label>
+                        <input type="text" class="form-control"  value="{{all.msp}}" readonly>
+                    </div>
+                    <label for="name">Ten</label>
+                    <div class="form-group">
+                        <input  type="text"  class="form-control" value="{{all.ten}} " readonly
+                            placeholder="Enter your name" required >
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Gia</label>
+                        <input  type="text" class="form-control"  value="{{all.gia}}" readonly
+                            placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Size</label>
+                        <input type="text"  class="form-control" id="" value="{{all.size}}" readonly
+                            placeholder="Enter your name">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

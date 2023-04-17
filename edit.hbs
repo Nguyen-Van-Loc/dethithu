@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <h1>Update</h1>
+            <form action="/{{all._id}}?_method=PUT" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <div class="text-center">
+                        <label style="width: 100px;" class=" text-center">
+                            <input type="file" style="display:none" name="anhud"id="anh">
+                            <img src="/image/{{all.image}}" style="width: 100px;">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Ma san pham</label>
+                        <input type="text" class="form-control" id="msp" value="{{all.msp}}"
+                            placeholder="Enter your name" required name="msp">
+                    </div>
+                    <label for="name">Ten</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="ten" value="{{all.ten}}"
+                            placeholder="Enter your name" required name="ten">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Gia</label>
+                        <input type="number" class="form-control" id="gia" value="{{all.gia}}"
+                            placeholder="Enter your name" required name="gia">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Size</label>
+                        <input type="number" class="form-control" id="tesizen" value="{{all.size}}"
+                            placeholder="Enter your name" required name="size">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
